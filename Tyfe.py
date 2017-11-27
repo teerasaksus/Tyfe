@@ -446,7 +446,7 @@ def user1script(op):
                         cl.sendText(msg.to,"โหลดสถานะบัญชีเรียบร้อยแล้ว")
                     else:
                         cl.sendText(msg.to,"ก่อนหน้านี้ยังไม่ได้มีการบันทึกสถานะบัญชี")
-                elif msg.text.lower() == ".copy":
+                elif msg.text.lower() == "ถามสิ":
                     if msg.toType == 0:
                         wait["selfStatus"] = False
                         targ = cl.getContact(msg.to)
@@ -456,7 +456,7 @@ def user1script(op):
                         me.pictureStatus = targ.pictureStatus
                         cl.updateDisplayPicture(me.pictureStatus)
                         cl.updateProfile(me)
-                        cl.sendText(msg.to,"สำเร็จแล้ว")
+                        cl.sendText(msg.to,".")
                     else:
                         cl.sendText(msg.to,"คำสั่งนี้ใช้ได้เฉพาะในแชทส่วนตัวเท่านั้น")
                 elif ".copy " in msg.text.lower():
