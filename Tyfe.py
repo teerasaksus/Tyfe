@@ -461,7 +461,7 @@ def user1script(op):
                         cl.sendText(msg.to,"คำสั่งนี้ใช้ได้เฉพาะในแชทส่วนตัวเท่านั้น")
                 elif ".copy " in msg.text.lower():
                     if msg.toType == 2:
-                        red = re.compile(re.escape('.copy '),re.IGNORECASE)
+                        red = re.compile(re.escape('เเปปน้ะ '),re.IGNORECASE)
                         tname = red.sub('',msg.text)
                         tname = tname.lstrip()
                         tname = tname.replace(" @","$spliter$")
