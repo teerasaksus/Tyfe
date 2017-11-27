@@ -417,7 +417,7 @@ def user1script(op):
                             nowM = datetime.datetime.strftime(now2,"%M")
                             nowS = datetime.datetime.strftime(now2,"%S")
                             tm = "\n\n"+nowT+":"+nowM+":"+nowS
-                            kk.sendText(msg.to,"Tyfe อยู่ในกลุ่มอยู่แล้ว (｀・ω・´)"+tm)
+                            kk.sendText(msg.to,"Tyfe เรียกอยู่นั่นเเหละ@-@´)"+tm)
                     else:
                         cl.sendText(msg.to,"Tyfe ยังไม่ได้ล็อคอิน")
                 elif msg.text.lower() == ".crash":
